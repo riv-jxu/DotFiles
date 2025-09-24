@@ -16,6 +16,9 @@ set hlsearch
 
 set incsearch
 
+set ignorecase
+set smartcase
+
 set autoindent
 
 function! ToggleNumber()
