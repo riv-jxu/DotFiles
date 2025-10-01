@@ -21,6 +21,18 @@ set smartcase
 
 set autoindent
 
+" Status line, clear on reload
+set statusline=
+" left side
+set statusline=\ %F\ %M\ %Y\ %R
+" divider
+set statusline+=%=
+" right side
+set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
+
+set laststatus=2
+
+
 function! ToggleNumber()
   if &number && &relativenumber
     set nonumber norelativenumber
