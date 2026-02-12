@@ -28,7 +28,7 @@ set statusline=\ %F\ %M\ %Y\ %R
 " divider
 set statusline+=%=
 " right side
-set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
+set statusline+=\ ascii:\ %b\ row:\ %l\ col:\ %c\ percent:\ %p%%
 
 set laststatus=2
 
