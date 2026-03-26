@@ -51,8 +51,11 @@ Plug 'ghifarit53/tokyonight-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'github/copilot.vim'
 
 call plug#end()
+
+filetype plugin indent on
 
 set termguicolors
 
