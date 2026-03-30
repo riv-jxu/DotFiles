@@ -52,6 +52,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'github/copilot.vim'
+" Need to modify ~/.vim/plugged/copilot-chat.vim/autoload/copilot_chat/auth.vim to fix an error
+Plug 'DanBradbury/copilot-chat.vim'
 
 call plug#end()
 
