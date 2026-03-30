@@ -32,6 +32,7 @@ set statusline+=\ ascii:\ %b\ row:\ %l\ col:\ %c\ percent:\ %p%%
 
 set laststatus=2
 
+let mapleader=" "
 
 function! ToggleNumber()
   if &number && &relativenumber
@@ -65,4 +66,22 @@ let g:tokyonight_style = 'night' " available: night, storm
 let g:tokyonight_enable_italic = 1
 
 colorscheme tokyonight
+
+" Key mappings
+" Fine files
+nnoremap <leader>ff :FZF<CR>
+" Ripgrep search
+nnoremap <leader>rg :RG<CR>
+
+" Open a new Copilot Chat window
+nnoremap <leader>cc :CopilotChatOpen<CR>
+
+" Focus existing chat window
+nnoremap <leader>cf :CopilotChatFocus<CR>
+
+" Add visual selection to chat
+vmap <leader>ca <Plug>CopilotChatAddSelection
+
+" Reset chat conversation
+nnoremap <leader>cr :CopilotChatReset<CR>
 
