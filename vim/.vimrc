@@ -72,6 +72,8 @@ colorscheme tokyonight
 nnoremap <leader>ff :FZF<CR>
 " Ripgrep search
 nnoremap <leader>rg :RG<CR>
+" Ripgrep search with word under cursor
+nnoremap <expr> <leader>rw ":RG \\<".expand('<cword>')."\\><CR>"
 
 " Open a new Copilot Chat window
 nnoremap <leader>cc :CopilotChatOpen<CR>
