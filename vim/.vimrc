@@ -68,7 +68,7 @@ let g:tokyonight_enable_italic = 1
 colorscheme tokyonight
 
 " Key mappings
-" Fine files
+" Find files
 nnoremap <leader>ff :FZF<CR>
 " Ripgrep search
 nnoremap <leader>rg :RG<CR>
