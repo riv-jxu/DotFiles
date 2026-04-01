@@ -87,3 +87,5 @@ vmap <leader>ca <Plug>CopilotChatAddSelection
 " Reset chat conversation
 nnoremap <leader>cr :CopilotChatReset<CR>
 
+" Start a fugitive command
+nnoremap <expr> <leader>g ":Git "
