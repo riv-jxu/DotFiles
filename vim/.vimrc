@@ -86,6 +86,10 @@ vmap <leader>ca <Plug>CopilotChatAddSelection
 
 " Reset chat conversation
 nnoremap <leader>cr :CopilotChatReset<CR>
+"
+" Enable/disable Copilot Auto-completion
+nnoremap <leader>cd :Copilot disable<CR>
+nnoremap <leader>ce :Copilot enable<CR>
 
 " Start a fugitive command
 nnoremap <expr> <leader>g ":Git "
