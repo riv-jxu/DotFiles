@@ -93,3 +93,14 @@ nnoremap <leader>ce :Copilot enable<CR>
 
 " Start a fugitive command
 nnoremap <expr> <leader>g ":Git "
+
+function! ToggleDiff()
+  if &diff
+    diffoff
+  else
+    diffthis
+  endif
+endfunction
+"
+" Map <C-n> followed by n to toggle numbers
+nnoremap <leader>df :call ToggleDiff()<CR>
