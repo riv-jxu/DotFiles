@@ -16,8 +16,11 @@ set hlsearch
 
 set incsearch
 
-set ignorecase
+set noignorecase
 set smartcase
+" Only ignorecase + smartcase in / or ? searches
+:au CmdlineEnter /,\? :set ignorecase
+:au CmdlineLeave /,\? :set noignorecase
 
 set autoindent
 
