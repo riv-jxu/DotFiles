@@ -16,11 +16,9 @@ set hlsearch
 
 set incsearch
 
-set noignorecase
+set ignorecase
 set smartcase
-" Only ignorecase + smartcase in / or ? searches
-:au CmdlineEnter /,\? :set ignorecase
-:au CmdlineLeave /,\? :set noignorecase
+set tagcase=match
 
 set autoindent
 
@@ -55,6 +53,7 @@ Plug 'ghifarit53/tokyonight-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'rhysd/vim-healthcheck'
 
 call plug#end()
 
