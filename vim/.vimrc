@@ -53,8 +53,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'github/copilot.vim'
-" Need to modify ~/.vim/plugged/copilot-chat.vim/autoload/copilot_chat/auth.vim to fix an error
-Plug 'DanBradbury/copilot-chat.vim'
 
 call plug#end()
 
@@ -74,22 +72,6 @@ nnoremap <leader>ff :FZF<CR>
 nnoremap <leader>rg :RG<CR>
 " Ripgrep search with word under cursor
 nnoremap <expr> <leader>rw ":RG \\<".expand('<cword>')."\\><CR>"
-
-" Open a new Copilot Chat window
-nnoremap <leader>cc :CopilotChatOpen<CR>
-
-" Focus existing chat window
-nnoremap <leader>cf :CopilotChatFocus<CR>
-
-" Add visual selection to chat
-vmap <leader>ca <Plug>CopilotChatAddSelection
-
-" Reset chat conversation
-nnoremap <leader>cr :CopilotChatReset<CR>
-"
-" Enable/disable Copilot Auto-completion
-nnoremap <leader>cd :Copilot disable<CR>
-nnoremap <leader>ce :Copilot enable<CR>
 
 " Start a fugitive command
 nnoremap <expr> <leader>g ":Git "
