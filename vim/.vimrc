@@ -76,6 +76,8 @@ nnoremap <expr> <leader>rw ":RG \\<".expand('<cword>')."\\><CR>"
 
 " Start a fugitive command
 nnoremap <expr> <leader>g ":Git "
+nnoremap <expr> <leader>gd ":Gvdiffsplit<CR>"
+nnoremap <expr> <leader>gb ":Git blame<CR>"
 
 function! ToggleDiff()
   if &diff
